@@ -8,5 +8,5 @@ if [ "$(git rev-parse --is-inside-work-tree)" == "true" ]; then
   echo "Update git repository"
 else
   echo "Cloning repository"
-  eval "git clone https://github.com/vinigomescunha/My-Deploy-Environment.git"
+  eval "git clone https://github.com/vinigomescunha/My-Deploy-Environment.git" 2>&1
 fi
