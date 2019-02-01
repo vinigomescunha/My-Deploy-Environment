@@ -2,5 +2,5 @@
 
 # My-Deploy-Environment
 
-echo "During push, update env..."
-
+echo "During push, update container git..."
+source "../my-scripts/create-git-deploy-request.sh"
