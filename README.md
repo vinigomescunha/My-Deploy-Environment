@@ -6,4 +6,5 @@ Steps:
 
 2 - bash ./bootstrap.sh -c  [ Run or Create docker container, depends on step 1 ]
 
+3(optional) - bash ./bootstrap.sh -d  [ Delete all docker images and containers ]
 
