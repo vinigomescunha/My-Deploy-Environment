@@ -7,5 +7,5 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update && apt-get install -y nodejs
 RUN git clone https://github.com/vinigomescunha/My-Deploy-Environment.git .
 EXPOSE 9000
-RUN cd /items/my-app && npm install && npm intall -g nodemon
+RUN cd /items/my-app && npm install && npm install -g nodemon
 CMD cd /items/my-app; nodemon ./index.js localhost 9000
