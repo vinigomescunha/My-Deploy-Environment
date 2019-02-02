@@ -7,7 +7,7 @@
 #==============================================================================
 function allocate_script_remote {
   echo "Script is executing in the docker container"
-  cd /my-app
+  cd /items/my-app
   sleep 2
   if [ "$(git rev-parse --is-inside-work-tree)" == "true" ]; then
     echo "Update git repository"

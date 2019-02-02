@@ -10,7 +10,7 @@ source $(realpath './my-scripts/create-git-deploy-request-docker.sh')
 CONFIG_VARS="$(cat 'config.sh')  | sed 's/\"/\x27'"
 firstdockerinstance="$(sudo docker ps -a | grep -P "${DOCKER_IMG_TAG}" | awk 'NR==1{print $1}')"
 if [ ! -z "$firstdockerinstance" ]; then
-  sudo docker exec -it $firstdockerinstance /bin/bash -c "
+  sudo docker exec -t $firstdockerinstance /bin/bash -c "
   $CONFIG_VARS
   $(typeset -f allocate_script_remote)
   allocate_script_remote"
