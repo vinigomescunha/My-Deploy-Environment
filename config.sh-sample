@@ -1,0 +1,10 @@
+echo "variables..."
+# git repository or clone repository url https without protocol see GIT_PROTOCOL
+export GIT_REPOSITORY="github.com/vinigomescunha/My-Deploy-Environment.git"
+# your docker image name and tag example "dockerimagename:1.0"
+export DOCKER_IMG_TAG=""
+# add your username
+export GIT_USERNAME=""
+# below https://github.com/settings/tokens :  "admin:repo_hook" and "repo"
+export GIT_ACCESS_TOKEN=""
+export GIT_PROTOCOL="https://"
