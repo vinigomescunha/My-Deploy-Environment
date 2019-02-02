@@ -7,6 +7,5 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update && apt-get install -y nodejs
 RUN git clone https://github.com/vinigomescunha/My-Deploy-Environment.git .
 EXPOSE 9000
-RUN cd my-app
-RUN npm install
+RUN cd /items/my-app && npm install
 CMD [ "npm", "start" ]
