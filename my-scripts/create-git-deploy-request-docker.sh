@@ -16,6 +16,6 @@ function allocate_script_remote {
     echo "Cloning repository"
     eval "git clone ${GIT_PROTOCOL}${GIT_REPOSITORY} . " 2>&1
     npm i
-    nodemon ./index.js localhost 9000
+    eval "nodemon ./index.js ${HOST_SERVER} ${PORT_SERVER}"
   fi
 }
